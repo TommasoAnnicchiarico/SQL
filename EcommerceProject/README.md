@@ -1,5 +1,5 @@
 # Data Analysis SQL
 
-This section is devoted to several project in data analysis (involving data cleaning, data aggregation and EDA). Those projects are all SQL
-based. SQL is a query language that allows to deal with big database and make quantitative analysis.
-Each project is dedicated to different areas and the context is well explained within the project's scopes.
+Schema of the database as follows:
+
+<img width="576" alt="Screenshot 2023-04-26 at 14 10 40" src="https://user-images.githubusercontent.com/131861258/234586051-cfc69d44-711f-4cbe-87a1-419b98e95aae.png">

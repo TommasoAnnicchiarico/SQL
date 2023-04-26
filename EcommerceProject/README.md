@@ -1,4 +1,4 @@
-# Data Analysis SQL
+# Ecommerce Project MYSQL
 
 Schema of the database as follows:
 

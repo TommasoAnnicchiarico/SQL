@@ -9,11 +9,11 @@ The project relies on the database provided by Udemy with the following schema:
 
 Below is displayed the final outcome on the project based on the following business questions:
 
-### 1.Building a funnel and analyze differences of 2 landing pages based on number of sessions
+### 1.Building a funnel of the 2 landing pages based on number of sessions
 
 <img width="568" alt="Output1" src="https://user-images.githubusercontent.com/131861258/234598709-86a83c9e-b55e-4360-a259-d89fbc2b1882.png">
 
 
-### 2.Building a funnel and analyze differences of 2 landing pages based on conversion rate
+### 2.Building a funnel of the 2 landing pages based on conversion rate
 
 <img width="566" alt="Output2" src="https://user-images.githubusercontent.com/131861258/234598786-d3b02b31-e46a-4ad8-bbbf-5ed901417ae5.png">

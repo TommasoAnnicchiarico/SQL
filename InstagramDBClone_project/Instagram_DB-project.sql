@@ -1,10 +1,11 @@
--- BUSINESS QUESTIONS #1 : Find the 5 5 oldest users
+-- BUSINESS QUESTIONS #1 : Find the 5 oldest users
 SELECT * FROM users 
 ORDER BY created_at ASC
 LIMIT 5;
 
 
 -- BUSINESS QUESTIONS #2 : What is the most popular registration day?
+
 SELECT 
     DATE_FORMAT(created_at, '%W') AS dayoftheweek,
     COUNT(*) AS total
@@ -15,11 +16,13 @@ ORDER BY total DESC;
 
 
 -- BUSINESS QUESTIONS #3 : Find inactive user (students who never posted a photo)
+
 SELECT username FROM users
 LEFT JOIN photos ON photos.user_id=users.id WHERE photos.id IS NULL;
 
 
--- BUSINESS QUESTIONS #4 : Who got the most like in a single post?
+-- BUSINESS QUESTIONS #4 : Find the user who got the most like in a single post?
+
 SELECT 
     users.id,
     users.username,
@@ -35,6 +38,7 @@ LIMIT 1;
 
 
 -- BUSINESS QUESTIONS #5 : Average number of photos per user
+
 SELECT 
     AVG(posted) AS average_peruser
 FROM
@@ -45,6 +49,7 @@ FROM
 
 
 -- BUSINESS QUESTIONS #6 : 5 most commonly used hastag
+
 SELECT 
     tag_id, tag_name, COUNT(tag_id) AS count_tag
 FROM photo_tags
@@ -55,6 +60,7 @@ LIMIT 5;
 
 
 -- BUSINESS QUESTIONS #7 : find users that have liked every single photo on the site (possibly bots)
+
 SELECT 
     username, COUNT(*) AS num_likes
 FROM users

@@ -1,5 +1,6 @@
-# Data Analysis SQL
+# CovidProject
 
-This section is devoted to several project in data analysis (involving data cleaning, data aggregation and EDA). Those projects are all MySQL
-based. SQL is a query language that allows to deal with big database and make quantitative analysis.
-Each project is dedicated to different areas and the context is well explained within the project's scopes.
+The objective of this project is to analyze Covid-19 pandemic. 
+Original dataset can be found at this link: https://ourworldindata.org/covid-deaths
+
+

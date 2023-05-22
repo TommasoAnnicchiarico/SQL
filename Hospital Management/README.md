@@ -2,7 +2,7 @@
 
 As a data analyst, I will be using data obtained from 130 US hospitals from 1999-2008 to discover insights about hospital management process and determine hospital metrics.
 
-The data set https://www.kaggle.com/code/iabhishekofficial/prediction-on-hospital-readmission/data?select=diabetic_data.csv is a real data set gotten from Kaggle and analyzed for educational purpose. This data set is from 1999-2008. It comprises of two tables: health and demographics. The data set is focused on patients with diabetics.
+The data set https://www.kaggle.com/code/iabhishekofficial/prediction-on-hospital-readmission/data?select=diabetic_data.csv is a real data set gotten from Kaggle and analyzed for educational purpose. This data set is from 1999-2008. It consists of two tables: health and demographics. The data set is focused only on patients with diabetics.
 
 All the columns available in the dataset are listed below:
 

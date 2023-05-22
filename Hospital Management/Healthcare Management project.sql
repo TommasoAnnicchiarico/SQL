@@ -4,13 +4,14 @@ SELECT*FROM health;
 SELECT*FROM demographics;
 
 
--- 1. How many different admission types are there, and what are their frequencies? Each admission type corresponds 
--- to a specific value such as emergencies,urgent, newborn etc.
+-- 1. How many different admission types are there, and what are their frequencies? 
+-- Each admission type corresponds to a specific value such as emergencies,urgent, newborn etc.
 
 SELECT admission_type_id, COUNT(*) AS frequency
 FROM health
 GROUP BY admission_type_id
 ORDER BY frequency DESC;
+
 
 -- 2.What is the minimum,average and maximum time spent in the hospital for patients?
 SELECT 
@@ -51,7 +52,6 @@ FROM (
 WHERE dense_ranking = 1;
 
 
-
 -- 5. Are there racial inequalities in health care?
 SELECT 
     race,
@@ -63,6 +63,7 @@ FROM health
 GROUP BY race
 ORDER BY avg_labprocedures DESC;
 -- From the result there is no clear disparity between treatment of patients from different race
+
 
 -- 6. Are there gender inequalities in health care?
 SELECT 
@@ -79,6 +80,7 @@ ORDER BY avg_labprocedures DESC;
 
 -- 7. Analyze if there is a correlation between time spent in hospital and number of diagnosis: 
 -- Calculating  MIN,AVG,MAX number of diagnosis before looking at correlation
+
 SELECT MIN(number_diagnoses), AVG(number_diagnoses),MAX(number_diagnoses) FROM health;
 
 
@@ -133,6 +135,7 @@ WHERE dense_ranking <= 3;
 
 -- I decided to deep dive by looking into the most common diagnosis by race.
 -- Diagnosis 414 is the most common among difference races, however 428 is in first place "only" for AfricanAmerican while being also the 1 overall.
+
 SELECT
     demographics.race,
     health.diag_1,
